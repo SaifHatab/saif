@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.2.0/css/line.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Saif Hatab</title>
+</head>
+<body>
+    <div class="container">
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Saif</p>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav-menu-list">
+                    <li class="nav-list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mode">
+                <div class="moon-sun" id="toggle-switch">
+                    <i class="fa fa-moon" id="moon"></i>
+                    <i class="fa fa-sun" id="sun"></i>
+                </div>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <main class="wrapper">
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="hello">
+                        <p>Hello, I'm</p>
+                    </div>
+                    <div class="featured-name">
+                        <span class="typedText"></span>
+                    </div>
+                    <div class="text-info">
+                        <p>My name is Saif! I am a front end developer with 1+ year of experience</p>
+                    </div>
+                    <div class="text-btn">
+                        <button class="btn Hire me">Hire me</button>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="img/OIP (1).jpeg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <figure class="about-me">
+                                <figcaption>
+                                    <img src="img/OIP (1).jpeg" alt="" class="profile"/>
+                                    <h2>web developer</h2>
+                                    <p>My name is Saif! I am a front end developer with 1+ year of experience</p>
+                            </figure>
+                            <button class="about-me-btn">Hire me</button>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-box">
+                            <span class="title">HTML</span>
+                            <div class="skill-bar ">
+                                <span class="skill-per html">
+                                    <span class="tooltip">90%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">CSS</span>
+                            <div class="skill-bar">
+                                <span class="skill-per css">
+                                    <span class="tooltip">70%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">JavaScript</span>
+                            <div class="skill-bar ">
+                                <span class="skill-per javascript">
+                                    <span class="tooltip">50%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Projects</h1>
+                </div>
+                <div class="project">
+                    <div class="project-container">
+                        <div class="project-box">
+                            <i class="uil uil-briefcase-alt"></i>
+                            <h3>completed</h3>
+                            <label>12+ finished Projects</label>
+                        </div>
+                    </div>
+                    <div class="project-container">
+                        <div class="project-box">
+                            <i class="uil uil-users-alt"></i>
+                            <h3>clients</h3>
+                            <label>10+ Happy clients</label>
+                        </div>
+                    </div>
+                    <div class="project-container">
+                        <div class="project-box">
+                            <i class="uil uil-award"></i>
+                            <h3>experience</h3>
+                            <label>1+ year in web development</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-section" id="contact">
+                <div class="top-header">
+                    <h1>Let's Work Together</h1>
+                    <span>Do you have a project in your mind, contact me</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Find me <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope">Email: saifhatab2008@gmail.com</i></p>
+                            <p><i class="uil uil-phone">Phone: 01000144805</i></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <input type="text" class="input-field" placeholder="Your Name"/>
+                                <input type="text" class="input-field" placeholder="Your Email"/>
+                            </div>
+                            <div class="text-area">
+                                <input type="text" class="input-subject" placeholder="subject"/>
+                                <textarea class="user-massage" placeholder="Massage"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
+                            </div>
+                            <p class="contact__message" id="contact-message"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+                <div class="icon"><i class="fa-brands fa-linkedin-in icon"></i></div>
+                <div class="icon"><i class="uil uil-github-alt"></i></div>
+                <div class="icon"><i class="uil uil-facebook"></i></div>
+            </div>
+            <div class="bottom-footer">
+                <p>copyright &copy; <a href="#home" style="text-decoration: none;">Saif Hatab</a> - All rights reserved 2025</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    
+</body>
+</html>
