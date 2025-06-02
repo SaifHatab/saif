@@ -30,3 +30,27 @@ var typingEffect = new Typed(".typedText", {
     backDelay: 2000,
 })
 
+/*-------send email----------*/
+
+window.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("CEbgTN8sBT71dOOCP");
+
+  const form = document.getElementById("contact-form");
+  const message = document.getElementById("contact-message");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // إرسال النموذج
+    emailjs.sendForm("service_yp0eyp3", "template_4xonj2g", this)
+      .then(function () {
+        message.innerText = "✅ Message sent successfully!";
+        message.style.color = "green";
+        form.reset();
+      }, function (error) {
+        message.innerText = "❌ Failed to send message.";
+        message.style.color = "red";
+        console.error("EmailJS Error:", error);
+      });
+  });
+});
